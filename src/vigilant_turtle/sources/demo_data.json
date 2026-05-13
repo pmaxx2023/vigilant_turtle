@@ -1,0 +1,38 @@
+{
+  "airpods pro": [
+    {"id": "demo-ap-001", "title": "Apple AirPods Pro 2nd Gen with MagSafe Case (USB-C) - New Sealed", "price": 189.99, "shipping": 0.0, "condition": "New", "seller": "tech_deals_now"},
+    {"id": "demo-ap-002", "title": "Apple AirPods Pro 2 USB-C - Brand New In Box", "price": 199.00, "shipping": 4.99, "condition": "New", "seller": "gadget_world"},
+    {"id": "demo-ap-003", "title": "AirPods Pro 2nd Generation USB-C - Sealed Apple Authentic", "price": 205.50, "shipping": 0.0, "condition": "New", "seller": "premier_electronics"},
+    {"id": "demo-ap-004", "title": "Apple AirPods Pro 2 (USB-C, 2023) - NEW SEALED + Warranty", "price": 219.99, "shipping": 0.0, "condition": "New", "seller": "blueline_audio"},
+    {"id": "demo-ap-005", "title": "Apple AirPods Pro 2nd Gen USB-C - Factory Sealed", "price": 224.00, "shipping": 5.99, "condition": "New", "seller": "audio_emporium"},
+    {"id": "demo-ap-006", "title": "AirPods Pro 2 USB-C Brand New", "price": 229.99, "shipping": 0.0, "condition": "New", "seller": "fastship_us"},
+    {"id": "demo-ap-007", "title": "Apple AirPods Pro 2 USB-C Sealed New", "price": 234.00, "shipping": 0.0, "condition": "New", "seller": "cellular_palace"},
+    {"id": "demo-ap-008", "title": "Apple AirPods Pro 2nd Generation Sealed", "price": 119.99, "shipping": 0.0, "condition": "New", "seller": "underrated_seller_new"},
+    {"id": "demo-ap-009", "title": "Apple AirPods Pro 2 USB-C BRAND NEW SEALED Authentic", "price": 239.99, "shipping": 0.0, "condition": "New", "seller": "topline_tech"},
+    {"id": "demo-ap-010", "title": "AirPods Pro 2nd Generation USB-C MagSafe - Sealed", "price": 215.00, "shipping": 3.50, "condition": "New", "seller": "audiophile_outlet"},
+    {"id": "demo-ap-011", "title": "Apple AirPods Pro 2 - New Open Box, Never Used", "price": 159.00, "shipping": 0.0, "condition": "Open box", "seller": "openbox_warehouse"},
+    {"id": "demo-ap-012", "title": "Apple AirPods Pro 2nd Gen USB-C NEW SEALED FAST SHIP", "price": 226.50, "shipping": 0.0, "condition": "New", "seller": "speedy_electronics"}
+  ],
+  "nintendo switch oled": [
+    {"id": "demo-ns-001", "title": "Nintendo Switch OLED Console White - Brand New Sealed", "price": 289.99, "shipping": 0.0, "condition": "New", "seller": "gameworld_central"},
+    {"id": "demo-ns-002", "title": "Nintendo Switch OLED Model White Joy-Con - NEW Factory Sealed", "price": 299.99, "shipping": 9.99, "condition": "New", "seller": "console_kings"},
+    {"id": "demo-ns-003", "title": "Nintendo Switch OLED Neon Red/Blue - Sealed In Box", "price": 305.00, "shipping": 0.0, "condition": "New", "seller": "retro_modern_games"},
+    {"id": "demo-ns-004", "title": "Nintendo Switch OLED White Console New", "price": 315.99, "shipping": 0.0, "condition": "New", "seller": "playerone_store"},
+    {"id": "demo-ns-005", "title": "Nintendo Switch OLED Console - Neon - NEW SEALED", "price": 320.00, "shipping": 0.0, "condition": "New", "seller": "nextgen_games"},
+    {"id": "demo-ns-006", "title": "Nintendo Switch OLED White Sealed Brand New", "price": 219.50, "shipping": 0.0, "condition": "New", "seller": "clearance_blitz"},
+    {"id": "demo-ns-007", "title": "Nintendo Switch OLED Model Neon Sealed", "price": 309.99, "shipping": 4.99, "condition": "New", "seller": "midwest_gamehub"},
+    {"id": "demo-ns-008", "title": "Nintendo Switch OLED White Joy-Con Console New", "price": 312.00, "shipping": 0.0, "condition": "New", "seller": "joystick_jungle"},
+    {"id": "demo-ns-009", "title": "Nintendo Switch OLED Neon Brand New Sealed Authentic", "price": 318.50, "shipping": 0.0, "condition": "New", "seller": "trusted_retro"},
+    {"id": "demo-ns-010", "title": "Nintendo Switch OLED White - NEW FACTORY SEALED", "price": 244.99, "shipping": 0.0, "condition": "New", "seller": "deal_thunder"}
+  ],
+  "lego star wars millennium falcon": [
+    {"id": "demo-lg-001", "title": "LEGO Star Wars 75257 Millennium Falcon - New Sealed", "price": 145.00, "shipping": 0.0, "condition": "New", "seller": "brick_emporium"},
+    {"id": "demo-lg-002", "title": "LEGO 75257 Star Wars Millennium Falcon NEW SEALED", "price": 152.99, "shipping": 9.99, "condition": "New", "seller": "lego_megastore"},
+    {"id": "demo-lg-003", "title": "LEGO Star Wars Millennium Falcon 75257 - Brand New", "price": 159.50, "shipping": 0.0, "condition": "New", "seller": "studs_and_bricks"},
+    {"id": "demo-lg-004", "title": "LEGO Star Wars 75257 Millennium Falcon Set", "price": 99.99, "shipping": 0.0, "condition": "New", "seller": "collectors_attic"},
+    {"id": "demo-lg-005", "title": "LEGO Star Wars 75257 Millennium Falcon NEW", "price": 164.00, "shipping": 0.0, "condition": "New", "seller": "rainbow_bricks"},
+    {"id": "demo-lg-006", "title": "LEGO 75257 Millennium Falcon Star Wars - Sealed", "price": 168.75, "shipping": 0.0, "condition": "New", "seller": "galactic_bricks"},
+    {"id": "demo-lg-007", "title": "LEGO Star Wars Millennium Falcon 75257 Brand New Sealed", "price": 155.00, "shipping": 4.50, "condition": "New", "seller": "minifig_meadow"},
+    {"id": "demo-lg-008", "title": "LEGO Star Wars 75257 Millennium Falcon - Retired Set NEW", "price": 175.00, "shipping": 0.0, "condition": "New", "seller": "retired_sets_co"}
+  ]
+}
