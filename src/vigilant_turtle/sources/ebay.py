@@ -78,7 +78,8 @@ class EbayBrowseSource:
                 "X-EBAY-C-MARKETPLACE-ID": self._marketplace,
                 "Accept": "application/json",
             },
-            params={"q": keyword, "limit": min(limit, 200)},
+            # Fixed-price listings only: an auction's current bid is not its price.
+            params={"q": keyword, "limit": min(limit, 200), "filter": "buyingOptions:{FIXED_PRICE}"},
         )
         resp.raise_for_status()
         items = resp.json().get("itemSummaries", []) or []
