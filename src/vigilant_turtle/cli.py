@@ -3,6 +3,7 @@ from __future__ import annotations
 import json
 import sys
 
+import httpx
 import typer
 from rich.console import Console
 from rich.table import Table
@@ -33,6 +34,18 @@ def _build_source(source_name: str):
             )
             raise typer.Exit(code=2) from err
     raise typer.BadParameter(f"unknown source: {source_name}")
+
+
+def _http_error_message(err: httpx.HTTPError) -> str:
+    if isinstance(err, httpx.HTTPStatusError):
+        resp = err.response
+        msg = f"eBay returned {resp.status_code} {resp.reason_phrase}."
+        if resp.status_code in (401, 403):
+            msg += " Check EBAY_CLIENT_ID and EBAY_CLIENT_SECRET."
+        elif resp.status_code == 429:
+            msg += " You hit the eBay rate limit. Wait a bit and try again."
+        return msg
+    return f"Could not reach eBay: {str(err) or type(err).__name__}"
 
 
 def _render_table(keyword: str, opps: list[Opportunity]) -> None:
@@ -85,7 +98,14 @@ def scan(
 ) -> None:
     """Scan a marketplace for listings priced well below the median for KEYWORD."""
     src = _build_source(source)
-    listings = src.search(keyword, limit=limit)
+    try:
+        listings = src.search(keyword, limit=limit)
+    except EbayAuthError as err:
+        console.print(f"[bold red]error:[/] {err}. Check EBAY_CLIENT_ID and EBAY_CLIENT_SECRET.", soft_wrap=True)
+        raise typer.Exit(code=1) from err
+    except httpx.HTTPError as err:
+        console.print(f"[bold red]error:[/] {_http_error_message(err)}", soft_wrap=True)
+        raise typer.Exit(code=1) from err
     opps = find_opportunities(
         listings,
         threshold_pct=threshold,
