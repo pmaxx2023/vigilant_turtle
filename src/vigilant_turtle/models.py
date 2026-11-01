@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from datetime import datetime
+from datetime import datetime, timezone
 
 from pydantic import BaseModel, Field, HttpUrl
 
@@ -17,7 +17,7 @@ class Listing(BaseModel):
     shipping: float = 0.0
     seller: str | None = None
     image_url: HttpUrl | None = None
-    fetched_at: datetime = Field(default_factory=datetime.utcnow)
+    fetched_at: datetime = Field(default_factory=lambda: datetime.now(timezone.utc))
 
     @property
     def landed_price(self) -> float:
